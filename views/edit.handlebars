@@ -1,0 +1,17 @@
+<div class="col-md-6">
+    <h3>Create a New post:</h3>
+
+    <form class="form new-post-form">
+      <div class="form-group">
+        <label for="post-title">post title:</label>
+        <input class="form-input" value="{{title}}" type="text" id="post-title" name="post-title" />
+      </div>
+      <div class="form-group">
+        <label for="post-content">content ($):</label>
+        <textarea id="post-content" class="form-input" name="post-content">{{content}}</textarea />
+      </div>
+      <div class="form-group">
+        <button type="submit" data-id="{{post.id}}" class="btn btn-primary">Update</button>
+      </div>
+    </form>
+  </div>

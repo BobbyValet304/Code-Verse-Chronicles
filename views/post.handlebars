@@ -1,0 +1,16 @@
+<div class="text-center">
+  <h2>{{title}}</h2>
+  <p>{{content}}</p>
+  <p>Created by {{user.name}} on {{format_date createdAt}}</p>
+  <p>
+   <form >
+    <textarea name="comment" id="comment-input" data-id="{{id}}" class="form-control" placeholder="Leave a comment..."></textarea>
+    <button class="btn btn-primary"  id="submit">Submit</button>
+   </form>
+  </p>
+  {{#each comments}}
+  <p>{{user.name}} on {{format_date createdAt}}: {{comment_text}}</p>
+  {{/each}}
+</div>
+<script src="/js/comment.js">
+</script>
